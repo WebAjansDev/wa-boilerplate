@@ -1,0 +1,28 @@
+{{> _head title='Home Page'}}
+<!-- content -->
+<main>
+    <ul>
+        {{#each testRepeat}}
+        <li>
+            {{this}}
+            asdasd
+        </li>
+        {{/each}}
+    </ul>
+    <a class="block w-10 h-10" data-fancybox href="https://picsum.photos/1000/1000">
+        <img src="https://picsum.photos/200/300" alt="">
+    </a>
+    <img class="fixed top-0 left-0" src="../assets/image/nah.png" alt="">
+    <section class="w-screen h-screen flex flex-col items-center justify-center gap-10 bg-red-500">
+        <h1 class="text-3xl text-white">
+            Here what its need you to create youre page
+        </h1>
+        <a href="otherPage.html" class="text-white">click me</a>
+    </section>
+    {{> _testSlide}}
+    <h1>
+        {{index.test}}
+    </h1>
+</main>
+<!-- content end -->
+{{> _footer}}

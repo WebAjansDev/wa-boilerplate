@@ -1,0 +1,14 @@
+<section class="w-screen h-screen bg-green-500">
+    <div class="swiper testSwiper w-full h-full">
+        <div class="testSwiper-next">next</div>
+        <div class="testSwiper-prev">prev</div>
+        <div class="testSwiper-pagination"></div>
+        <div class="swiper-wrapper">
+            {{#each index.slides}}
+            <div class="swiper-slide">
+                <img class="w-full h-full object-cover object-center" src="{{this}}" alt="">
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
